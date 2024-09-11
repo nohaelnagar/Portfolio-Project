@@ -1,0 +1,38 @@
+/* Vertical Nav - Initially collapsed */
+.vertical-nav {
+  width: 60px; /* Default width for collapsed state */
+  transition: width 0.3s; /* Smooth transition */
+  position: fixed; /* Keep it on the left side of the page */
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #a3c6ea; /* Light grey background */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.vertical-nav:hover {
+  width: 200px; /* Expand when hovered */
+}
+
+.vertical-nav .nav-link {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 15px;
+  text-align: left;
+  display: block;
+}
+
+.vertical-nav:hover .nav-link {
+  white-space: normal; /* Expand text when hovered */
+}
+
+.content {
+  margin-left: 60px; /* Margin for the collapsed sidebar */
+  padding: 20px;
+  transition: margin-left 0.3s;
+}
+
+.vertical-nav:hover + .content {
+  margin-left: 200px; /* Adjust content margin when nav is expanded */
+}
