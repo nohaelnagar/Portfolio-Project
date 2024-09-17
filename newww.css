@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+header .lognamenimg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+header .search {
+  display: flex;
+  align-items: center;
+}
+
+header .search input {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+header .user {
+  display: flex;
+  align-items: center;
+}
+
+header .user i {
+  margin-right: 5px;
+}
+
+aside .side-bar {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+aside .sitem {
+  margin-bottom: 10px;
+}
+
+aside .sitem a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+aside .sitem img {
+  margin-right: 10px;
+}
+
+main {
+  display: flex;
+  height: calc(100vh - 160px); /* Adjust height based on header and footer */
+}
+
+.part1, .part2, .part3 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: white;
+}
+
+.part1 {
+  background-color: #ff5733; /* Red */
+}
+
+.part2 {
+  background-color: #33ff57; /* Green */
+}
+
+.part3 {
+  background-color: #3357ff; /* Blue */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
